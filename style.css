@@ -1,0 +1,51 @@
+
+
+div#general{
+	margin: auto;
+	margin-top: 20px;
+	width: 960px;
+	height: 800px;
+	background-color: #0000;
+}
+div#anun{
+	float: right;
+	width: 250px;
+	height: 500px;
+}
+div#arri{
+	width: 640px;
+	height: 520px;
+}
+div#cuer{
+	margin-top: 40px;
+	width: 640px;
+	height: 600px;
+	background-color: purple;
+}
+.label{
+	font-family: 'Balsamiq Sans', cursive;
+	color: white;
+}
+p{
+	font-family: 'Balsamiq Sans', cursive;
+	color: white;
+}
+h2{
+	font-family: 'Balsamiq Sans', cursive;
+	color: white;
+}
+div#tabla{
+	margin: 420px;
+}
+div#tabla2{
+	float: left;
+}
+input{
+  width: 30%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

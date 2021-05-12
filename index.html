@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indemnizacion</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible"content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Monoton&family=Sigmar+One&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="https://i.pinimg.com/originals/30/26/b6/3026b6e300739145ea0cfd0caea51670.jpg"/>
+</head>
+<body>
+	<nav class="navbar navbar-light bg-body">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">
+		  	<img src="https://i.pinimg.com/originals/30/26/b6/3026b6e300739145ea0cfd0caea51670.jpg" class="rounded-circle" alt="" width="50" height="50">
+		      Indemnización
+		  </a>
+	  </div>
+	</nav>
+	<div id="general">
+		<div id="anun" class="shadow-lg p-3 mb-5 rounded bg-dark bg-gradient">
+			<p>Visita nuestra calculadora basica.</p>
+			<a href="https://marcovegam.github.io/Calculadora/"><img src="https://lh3.googleusercontent.com/BJo7CtHlZ1nIvLB1YL04oQiBpmszQr3eq9knfw2t16y2SDrkqytl5gxfbnxMAWtO9eg9YRrv-SyjIpgJj5_A_yudSmbuUGbh5Q-iEyFL4RRzo8wGED6ZpBeV9OZ6BxqTgTGQdIVOTpIQ18U7kAgGYkZW3kQoVNT6UnRe97c5Jg8ns1bao76KM8jxbUPqkG1V1VMZC6UgkRO-p_2yQS98D6rhk9TIxD-ae8rcQWUyiN2g3w67jXIVX3F7e1HnzEu5W-YNmx8qEQwvGuFf2nFlKxH2Upeqt9hpvZxGE6fKqmZKiYqRvwC_yUuUowvze9r8VWRH2I017HXYJDxMClrxXbqD7likaZ5lzD4z531OHknTm_zcGjSg-4DVgR7Ouwol5dCvZ7Gb3lTOEWOBJIMIQH6Kma92CVSmV8bJC3-Ie7LE3wPqRUYl05Nwggy5FualRWTpmQeDZHqg7vA9H6KjhAnF1xC2WFjyFQ3cCMfYw7kp9DcWscIDmihUvMZs7rD84ZzUZRgVLgH4xDEVd37PYJk16RiAVQndO6HxsTGpLYANTHpuvV6nhfGFGzMJVnWnJzMZpkjX-FImSHG_m9TMc-Dv7Z-A9uVzHdP3bzEKDhQDPJEiu9GnenruFdTIv_IMHWakHkGePuRtCtcvtAZFpj2LpYrZnxFBeN_IgYIvGNf8oU8OhUpi758oki-rfwZ0SmmAH5Bxeu1kGQkaXvv4nke0AQ=w358-h503-no?authuser=1" class="rounded" width="220" height="400"></a>
+		</div>
+		<div id="arri" class="shadow-lg p-3 mb-5 rounded bg-dark bg-gradient">
+			<h2>
+				¿Qué es indemnización?
+			</h2>
+			<br>
+			<p>Indemnización es la compensación que se exige por el perjuicio causado.
+			Indemnización deriva del verbo indemnizar que proviene del latín compuesto por el prefijo in- que significa negación de una acción, la palabra damnum que significa daño y el sufijo -izare que significa “convertir en” por lo tanto la palabra se refiere a la anulación del daño causado.<br>
+			Tomando en cuenta la siguiente tabla aremos uso de los dias de vacaciones por derecho en los años laborados.
+			</p>
+			<img src="https://www.oficinaempleo.mx/blog/wp-content/uploads/2018/08/di%CC%81as_de_vacaciones_correspondientes_por_antigu%CC%88edad.png" height="240">
+		</div>
+		<div id="cuer" class="shadow-lg p-3 mb-5 rounded bg-gradient ">
+			<label for="sal"><p>Salario: $</p></label>
+			<input type="text" id="sal" name="sal"/>
+			<br>
+			<label for="dia"><p>Dias de Vacaciones</p></label>
+			<input type="text" id="dia" name="dia">
+			<br>
+			<button type="button" class="btn btn-success" onClick="funcion()">Calcular</button>
+			<button type="button" class="btn btn-warning" onClick="reset()">Borrar</button><br>
+			<br>
+			<label for="sd"><p>Salario por dia: $</p></label>
+			<input type="text" id="sd" name="sd">
+			<br>
+			<label for="pv"><p>Prima Vacacional: $</p></label>
+			<input type="text" id="pv" name="pv">
+			<br>
+			<label for="sdi"><p>Salario diario integrado: $</p></label>
+			<input type="text" id="sdi" name="sdi">
+			<br>
+			<label for="smi"><p>Salario mensual integrado: $</p></label>
+			<input type="text" id="smi" name="smi">
+			<br>
+			<label for="s3m"><p>Salario de 3 meses: $</p></label>
+			<input type="text" id="s3m" name="s3m">
+			<br>
+			<label for="s2a"><p>Salario de 20 dias por año: $</p></label>
+			<input type="text" id="s2a" name="s2a">
+			<br>
+			<label for="pa"><p>Prima de antiguedad: $</p></label>
+			<input type="text" id="pa" name="pa">
+			<br>
+			<label for="liq"><p>Liquidación total: $</p></label>
+			<input type="text" id="liq" name="liq">
+			<br>
+			<script src="funcion.js"></script>
+		</div>
+	</div>
+	<div id="tabla">
+		<table style="font-family: arial; height:90px; border-collapse: collapse; border: ">
+		  <tr>
+		    <td style="padding: 7px">
+		      <img src="https://lh3.googleusercontent.com/NkJyM-lfSGJsb4BWvOgTmQX64cjQoYxX4_Q7btPLNQeWSSYRPyJ0WM1pS1NKmGcSw_FpFsBOL1gyagEduq2ztebvSWhIEQQDxvi3dGJgcWhMnNujzNCGHlI9IaV6zds8mI-YCJFSwJSHVDt0aUTZ0loQzBf6Elqdr_UFd2CzBfTCz07inqhe2hOsyL_Hp_R_xmWAa_jsjGA1uz7PSaJzMyT3cj6FArmS2XPuN3hYy9sM92vGAy1AmDqKW5Vgg-t3bYm4TZ13hQwrmcNE0DEv8L9rW_Zl3wDa3lTrqYapgieftF_0UtB3E3vWfEdYM5MofueHd_5HjZheTe9zAnp6paxxoRrm0AA4ZMzXSE9NS3Mmx7uf2lDkqjMY9iMw24FXcRejMQ6wwoXKocqmCzjATR_7p-la7F6XmzSBMsSqUavIW4fh_2Npwji8g3GcXt9mnq2SFP-d3fS6OrRcFcqnAtevhuqfX2ZnC0ofFFYrPVT0kcdXLEbEjJYZfvlQeq_XHQ2kN4QQDqaH0C--FFx_otMIRk06VYBmw_-LjSl3gVfH5x5MYougGQA4ljc7LCTS7TGvQcyRcJy9OPE8SBnWCzQMMMNRAFG1DKTJITIs3nfJ4CZAFqylDGc8uwPgfajhkcOURq9eJp8pAMV7QzglhnZDAENLjzcR7pQyf1N90VrcQX7E66oth8UfXhWSH_P5L8ER7Ou3_Iw19EPKhX7B3pbyQQ=w328-h330-no?authuser=1" 
+		         alt="" 
+		         width="80" 
+		         height="80" 
+		         style="display:block; border-radius: 50%; margin-right: 7px; float: left"
+		       >
+		      <div style="width: 5px; height: 80px; background:#75c8fd; float: right">
+		    </td>
+		    <td style="vertical-align:top; padding:7px 14px 7px 3px">
+		      <strong style="margin: 0; font-size:17px; color: rgba(40, 45, 49,.9); line-height: 24px; height: 24px; display:block">Marco Vega</strong>
+		      <p style='font-size:12px; margin: 0px 0 6px; height: 30px'>
+		        <span style="margin: 0; color: #666">Desarrollador web</span>
+		        <br>
+		        <a href=mailto:marcovegamz@gmail.com?subject=PaginaWeb&body=Escribe aquí si quieres una pagina web " >marcovegamz@gmail.com</a>
+		      </p>
+		      <div id="sociales" >
+		      	<a href="https://www.facebook.com/profile.php?id=100006974778930"><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-logotipo-del-icono-de-facebook-by-vexels.png" height="25" width="25"></a>
+		      	<a href="https://twitter.com/marcovegamz"><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-logotipo-del-icono-de-twitter-by-vexels.png" height="25" width="25"></a>
+		      	<a href="https://www.instagram.com/marcovega.mz/"><img src="https://compu-mundo.com.mx/wp-content/uploads/2020/02/logo-instagram-1.png" height="25" width="25"></a>
+		      	<a href="https://chatwith.io/s/marco-vega"><img src="https://landbot.io/wp-content/uploads/2019/09/whatsapp-business-app.jpg" height="25" width="25"></a>
+		      </div>
+		    </td>
+		  </tr>
+		</table>
+		<table style="font-family: arial; height:90px; border-collapse: collapse; border: ">
+		  <tr>
+		    <td style="padding: 7px">
+		      <img src="https://lh3.googleusercontent.com/mYo3AGoLccojLuK3yAv9EReM7kxOdSeb61-cxJoEdp5Co7bmvcQ3-UbTOiykmtod1ZopOhtK0qvr3t-MJPWYdWfEFHz3USSW3HJrWfenL98OOKw1iAKX3wFjC5fiaSflq7peXkDnQEiMfBXmsmPVl393YfsjIL_aVnqwOKF4Ptm601_4h28bXZvuwcnOQJWR8HBsqJmzH2h8qoBHoGIsV0SuNX4UZnHpkF8n0RvZ6sMMP5ioeYL5yAF2_Wk9frPkux5PhjwYqYNxAFXIFSZpjtbbKrrFQqIn6fJEweeXs7XJ5exV1YqHJp29WhOeLnKgSaBIIRyi7aDdkZREdrn2pgLRigD9_rCDvxEPuKzdC7HMaZcvgD2CsBpKrusFWbPeAaCuyx8DJCQNv_WwhBe0KcWkm98X1I22T2L0UiwOl5_dARx3JnuqYyWg5ov8QRjYRkZxd5tV1SAFAvPhkWFRvMLcWvxwCwnXBXD20-1xQbaWMpZWHJMvHWHV6xzOMfQCbDKhFZcu9KKn5VwgyzlmrsWKcTCCQIvZJoes8pgz3_hn7FZS6dal1Snh-LkFZhDX91TrO4DSeDK1lHs6PqRPEk16mhYjB4Kl1p95MGef_yXfG-6jcAbyTM9ayc0-dWgZkeB79UQe80mLLPoFcjqA-eK50NMde7nGSbhp1Tq2A7z0Yeik-fRBmpv3e4Sx0P2GRHc_mrdQlsgcOibjwRIJ604d1g=s668-no?authuser=1" 
+		         alt="" 
+		         width="80" 
+		         height="80" 
+		         style="display:block; border-radius: 50%; margin-right: 7px; float: left"
+		       >
+		      <div style="width: 5px; height: 80px; background:#75c8fd; float: right">
+		    </td>
+		    <td style="vertical-align:top; padding:7px 14px 7px 3px">
+		      <strong style="margin: 0; font-size:17px; color: rgba(40, 45, 49,.9); line-height: 24px; height: 24px; display:block">Mariana Barron</strong>
+		      <p style='font-size:12px; margin: 0px 0 6px; height: 30px'>
+		        <span style="margin: 0; color: #666">Desarrolladora web</span>
+		        <br>
+		        <a href=mailto:marcovegamz@gmail.com?subject=PaginaWeb&body=Escribe aquí si quieres una pagina web " >marcovegamz@gmail.com</a>
+		      </p>
+		      <div id="sociales" >
+		      	<a href="https://www.facebook.com/mariana.barron.rdz"><img src="https://images.vexels.com/media/users/3/137253/isolated/preview/90dd9f12fdd1eefb8c8976903944c026-logotipo-del-icono-de-facebook-by-vexels.png" height="25" width="25"></a>
+		      	<a href="https://chatwith.io/s/mariana-barron"><img src="https://landbot.io/wp-content/uploads/2019/09/whatsapp-business-app.jpg" height="25" width="25"></a>
+		      </div>
+		    </td>
+		  </tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
